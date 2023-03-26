@@ -1,0 +1,72 @@
+body {
+    background: url('./nku.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font: normal 11px auto "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #fffeff;
+}
+
+.mylabel {
+    font-size: large;
+    color: azure;
+}
+
+a {
+    overflow: visible;
+    font-family: Tahoma, Helvetica, Arial, "宋体", sans-serif;
+    color: #f7f8fb;
+    background-color: rgba(83, 192, 222, 0.401);
+    text-decoration: none;
+}
+
+button {
+    background-color: rgba(204, 212, 214, 0.618);
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+}
+
+input {
+    border-radius: 20px;
+    background-color: rgba(230, 237, 239, 0.658);
+    cursor: pointer;
+}
+
+a:hover {
+    color: #9997D8;
+}
+
+textarea {
+    border-radius: 20px;
+    background-color: #f7f8fb9d;
+}
+
+th {
+    font: bold 16px "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+    color: #4f6b72;
+    border-right: 1px solid #C1DAD7;
+    border-bottom: 1px solid #C1DAD7;
+    border-top: 1px solid #C1DAD7;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-align: left;
+    padding: 6px 6px 6px 12px;
+}
+
+td {
+    border-right: 1px solid #C1DAD7;
+    border-bottom: 1px solid #C1DAD7;
+    background: rgba(255, 255, 255, 0.656);
+    font-size: 16px;
+    padding: 6px 6px 6px 12px;
+    color: #4f6b72;
+}
+
+td.alt {
+    background: #95e7e7aa;
+    color: #797268;
+}
