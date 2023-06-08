@@ -2,9 +2,8 @@
     session_start();
     $correct_pwd = 0; //学号正确
     $true_stu = 0; //密码正确
-    require_once('pwd.php');
-    $password = DB_PASSWORD;
-    $conn = mysqli_connect("localhost", "db_homework", $password, "db_homework");
+    require_once('db_info.php');
+    $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
     $stu_id = $_POST['stu_id'];
     $pwd = $_POST['pwd'];
     $SQL = "SELECT stu_pwd FROM student where stu_id=$stu_id;";

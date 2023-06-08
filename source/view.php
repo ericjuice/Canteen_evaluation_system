@@ -48,9 +48,8 @@ $id = $_SESSION["id"];
                                     </td>
                                 </tr>
                                 <?php
-                                  require_once('pwd.php');
-                                  $password = DB_PASSWORD;
-                                $conn = mysqli_connect("localhost", "db_homework", $password, "db_homework");
+                                  require_once('db_info.php');
+                                $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
                                 $SQLStr = "select rec_id,window, food, date, comment,score from v_rec_rank;";
                                 $result = mysqli_query($conn, $SQLStr);
                                 mysqli_close($conn);
@@ -103,9 +102,8 @@ $id = $_SESSION["id"];
                                     </td>
                                 </tr>
                                 <?php
-                                  require_once('pwd.php');
-                                  $password = DB_PASSWORD;
-                                $conn = mysqli_connect("localhost", "db_homework", $password, "db_homework");
+                                  require_once('db_info.php');
+                                $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
                                 $SQLStr = "select food, window,score from v_food_rank;";
                                 $result = mysqli_query($conn, $SQLStr);
                                 if ($row = mysqli_fetch_array($result)) //通过循环读取数据内容  

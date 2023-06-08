@@ -1,8 +1,7 @@
 <link rel="stylesheet" type="text/css" href="./global.css"/>
 <?php
-  require_once('pwd.php');
-  $password = DB_PASSWORD;
-$conn = mysqli_connect("localhost", "db_homework", $password, "db_homework");
+  require_once('db_info.php');
+$conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
 $id = $_GET['id'];
 $score = $_GET['score'];
 $comment = $_GET['comment'];

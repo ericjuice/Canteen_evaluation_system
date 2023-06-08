@@ -1,7 +1,6 @@
  <?php
-      require_once('pwd.php');
-      $password = DB_PASSWORD;
-      $conn = mysqli_connect("localhost", "db_homework", $password, "db_homework");
+      require_once('db_info.php');
+      $conn = mysqli_connect(DB_HOST, DB_USER, DB_PASSWORD, DB_NAME);
       $stu_id = $_POST['stu_id'];
       $pwd = $_POST['pwd'];
       $name = $_POST['stu_name'];
