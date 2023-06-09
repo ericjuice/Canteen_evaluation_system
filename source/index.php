@@ -12,67 +12,49 @@
 
     <!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
     <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.min.js"></script>
+        <style>
+        body {
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            margin-top: 100px;
+            width: 500px;
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .captcha-image {
+            width: 30%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
-        <div class="row flex justify-content-center align-items-center">
-            <div class="col-md-6">
-                <h1 class="text-center">欢迎来到NKU食堂评价系统!!!</h1>
-                <!-- <a href="reg.php" class="d-block text-center my-3">还没注册?点我</a> -->
-                <table class="table table-bordered table-striped">
-                    <tr>
-                        <td>
-                            <form method="post" action="login.php">
-                                <div class="form-group">
-                                    <label for="username">学号：</label>
-                                    <input name="stu_id" type="text" id="username" class="form-control" placeholder="请输入您的学号" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <label for="password">密码：</label>
-                                    <input name="pwd" type="password" id="password" class="form-control" placeholder="请输入您的密码" required="required" />
-                                </div>
-                                <div class="form-group text-center">
-                                    <button type="submit" class="btn btn-primary">登录</button>
-                                    &nbsp;&nbsp;
-                                    <button href="reg.php" class="btn btn-primary">注册</button>
-                                </div>
-                            </form>
-                        </td>
-                    </tr>
-                </table>
-                <hr />
+        <h2 class="text-center">欢迎来到NKU食堂评价系统</h2>
+        <form method="post" action="login.php">
+            <div class="mb-3">
+                <label for="account" class="form-label">账号:</label>
+                <input type="text" class="form-control" id="username" name="stu_id" required>
             </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">密码:</label>
+                <input type="password" class="form-control" id="password" name="pwd" required>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary">登录</button>
+            </div>
+        </form>
+        <p class="text-center mt-3" style="color: gray">如果没有账号, 请注册<br>或者使用默认账号<font color="pink">( 1 : 123456)</font></p>
+        <div class="text-center">
+            <a href="reg.php" class="btn btn-success">注册账号</a>
         </div>
     </div>
 </body>
 
-<!-- <body>
-
-    <div align="center">
-        <h1>欢迎来到南开大学食堂评价系统!!!</h1>
-        <a href="reg.php">还没注册?点我</a>
-        <table width="900" border="10" cellspacing="20" cellpadding="10">
-            <tr>
-                <td height="40">
-                    <form method="post" action="login.php">
-                        <div align="center">
-                            学号：
-                            <input name="stu_id" type="text" id="username" size="12" placeholder="请输入您的学号" required="required" />
-                            密码：
-                            <input name="pwd" type="password" id="password" size="12" placeholder="请输入您的密码" required="required" />
-                            <input type="submit" value="登录" />
-                        </div>
-                    </form>
-                </td>
-            </tr>
-        </table>
-        <tr>
-            <td>
-                <hr />
-            </td>
-        </tr>
-    </div>
-</body> -->
 
 </html>
