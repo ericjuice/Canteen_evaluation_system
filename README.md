@@ -17,6 +17,15 @@ tips:the pwd.php file is deleted for security, u should add a file named "pwd.ph
 运行:
 - 1.在mysql里执行`数据库创建源码.sql`文件，然后使用Navicat执行`插入数据.txt`,(也可以在mysql执行里面的插入语句)
 - 2.在命令行执行`触发器.txt`里的命令
-- 3.完成
+- 3.在`source/`创建db_info.php这个文件
+写入如下(自己更改密码等代码)
+```php
+<?php 
+define('DB_PASSWORD', '123456'); 
+define('DB_HOST', 'localhost');
+define('DB_USER', 'root');
+define('DB_NAME', 'root');
+?>
+```
+- 4.完成
 
-pwd.php这个文件出于安全原因已删除，你可以创建一个这个文件，然后写入` <?php define('DB_PASSWORD', 'your_password_here'); ?>`

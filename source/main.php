@@ -2,12 +2,12 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="./global.css"/>
+    <link rel="stylesheet" type="text/css" href="./global.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=uft-8" />
     <title>主页</title>
 </head>
 
-<body >
+<body>
     <?php
     session_start();
     require_once('db_info.php');
@@ -24,17 +24,17 @@
             <font size=3>
                 <div>
                     <label class="mylabel">食物<label><input type="text" name="food_id" value="" required="required" placeholder="请输入您的食物编号">
-                    <label class="mylabel">窗口<label><input type="text" name="wind_id" value="" required="required" placeholder="请输入您的窗口">
-                    <label class="mylabel">评分</label><select id='1' name="score"></select>
-                    <script>
-                        var select = document.getElementById('1'); //设置0-10分的下拉框
-                        for (var i = 0; i <= 10; i++) {
-                            var option = document.createElement('option');
-                            option.setAttribute('value', i);
-                            option.innerHTML = i;
-                            select.appendChild(option);
-                        }
-                    </script>
+                            <label class="mylabel">窗口<label><input type="text" name="wind_id" value="" required="required" placeholder="请输入您的窗口">
+                                    <label class="mylabel">评分</label><select id='1' name="score"></select>
+                                    <script>
+                                        var select = document.getElementById('1'); //设置0-10分的下拉框
+                                        for (var i = 0; i <= 10; i++) {
+                                            var option = document.createElement('option');
+                                            option.setAttribute('value', i);
+                                            option.innerHTML = i;
+                                            select.appendChild(option);
+                                        }
+                                    </script>
                 </div><br>
                 <div>
                     <label class="mylabel" style="position:relative;top: -35px;">评论</label>
